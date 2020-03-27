@@ -1,0 +1,125 @@
+ DROP TABLE IF EXISTS higher_ed_dataset;
+ CREATE TABLE higher_ed_dataset AS
+ SELECT*
+ FROM ay_08_09
+ UNION
+ SELECT*
+ FROM ay_09_10
+ UNION
+ SELECT*
+ FROM ay_10_11
+ UNION
+ SELECT*
+ FROM ay_11_12
+  UNION
+ SELECT*
+ FROM ay_12_13
+  UNION
+ SELECT*
+ FROM ay_13_14
+  UNION
+ SELECT*
+ FROM ay_14_15
+  UNION
+ SELECT*
+ FROM ay_15_16
+  UNION
+ SELECT*
+ FROM ay_16_17
+  UNION
+ SELECT*
+ FROM ay_17_18;
+
+ SELECT*
+FROM higher_ed_dataset
+LIMIT 10
+
+
+ALTER TABLE higher_ed_dataset RENAME COLUMN anyaidp TO percent_ft_ug_aid; 
+ALTER TABLE higher_ed_dataset RENAME COLUMN igrnt_p TO percent_ft_ug_inst_aid;
+ALTER TABLE higher_ed_dataset RENAME COLUMN pgrnt_p TO percent_ft_ug_pell_aid;
+ALTER TABLE higher_ed_dataset RENAME COLUMN npist2 TO avg_np_stdnts_aid_current_yr_public;
+ALTER TABLE higher_ed_dataset RENAME COLUMN npist1 TO avg_np_stdnts_aid_prior_1_yr_public;
+ALTER TABLE higher_ed_dataset RENAME COLUMN npist0 TO avg_np_stdnts_aid_prior_2_yr_public;
+ALTER TABLE higher_ed_dataset RENAME COLUMN npgrn2 TO avg_np_stdnts_aid_current_yr_private;
+ALTER TABLE higher_ed_dataset RENAME COLUMN npgrn1 TO avg_np_stdnts_aid_prior_1_yr_private;
+ALTER TABLE higher_ed_dataset RENAME COLUMN npgrn0 TO avg_np_stdnts_aid_prior_2_yr_private;
+ALTER TABLE higher_ed_dataset RENAME COLUMN chg2ay3 TO pub_in_state_tuition_fees;
+ALTER TABLE higher_ed_dataset RENAME COLUMN chg3ay3 TO pub_out_state_tuition_fees;
+ALTER TABLE higher_ed_dataset RENAME COLUMN ret_pcf TO ft_retention_rate;
+ALTER TABLE higher_ed_dataset RENAME COLUMN ret_pcp TO pt_retention_rate;
+ALTER TABLE higher_ed_dataset RENAME COLUMN dvic04 TO admissions_yield;
+ALTER TABLE higher_ed_dataset RENAME COLUMN dvic01 TO percent_admitted;
+ALTER TABLE higher_ed_dataset RENAME COLUMN dvic07 TO admissions_yield_ft;
+ALTER TABLE higher_ed_dataset RENAME COLUMN dvic10 TO admissions_yield_pt;
+ALTER TABLE higher_ed_dataset RENAME COLUMN cinson TO price_in_state_on_campus;
+ALTER TABLE higher_ed_dataset RENAME COLUMN cotson TO price_out_state_on_campus;
+ALTER TABLE higher_ed_dataset RENAME COLUMN undup TO un_dup_12_month_hc;
+ALTER TABLE higher_ed_dataset RENAME COLUMN trrttot TO transfer_out_rate;
+ALTER TABLE higher_ed_dataset RENAME COLUMN banc100 TO num_completed_ba_deg_100;
+ALTER TABLE higher_ed_dataset RENAME COLUMN bagr100 TO perc_completed_ba_deg_100;
+ALTER TABLE higher_ed_dataset RENAME COLUMN banc150 TO num_completed_ba_deg_150;
+ALTER TABLE higher_ed_dataset RENAME COLUMN bagr150 TO perc_completed_ba_deg_150;
+ALTER TABLE higher_ed_dataset RENAME COLUMN banc200 TO num_completed_ba_deg_200;
+ALTER TABLE higher_ed_dataset RENAME COLUMN bagr200 TO perc_completed_ba_deg_200;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1correv TO cor_rev_total_dollars_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1tufepc TO cor_rev_perc_tuition_fees_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1stappc TO cor_rev_perc_state_appr_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f11cappc TO cor_rev_perc_loc_appr_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1gvgcpc TO cor_rev_perc_grants_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1otrvpc TO cor_rev_perc_other_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2correv TO cor_rev_total_dollars_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2tufepc TO cor_rev_perc_tuition_fees_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2gvgcpc TO cor_rev_perc_grants_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2pggcpc TO cor_rev_perc_gifts_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2invrpc TO cor_rev_investment_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2otrvpc TO cor_rev_perc_other_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1tufeft TO fte_rev_tuition_fees_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1stapft TO fte_rev_state_appr_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1lcapft TO fte_rev_loc_appr_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1gvgcft TO fte_rev_grants_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1otrvft TO fte_rev_other_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2tufeft TO fte_rev_tuition_fees_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2gvgcft TO fte_rev_grants_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2pggcft TO fte_rev_gifts_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2invrft TO fte_rev_investment_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2otrvft TO fte_rev_other_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1corexp TO cor_exp_total_dollars_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1instpc TO cor_exp_perc_instruction_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1rsrcpc TO cor_exp_perc_research_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1pbsvpc TO cor_exp_perc_public_srv_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1acsppc TO cor_exp_perc_acad_support_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1stsvpc TO cor_exp_perc_student_serv_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1insupc TO cor_exp_perc_inst_serv_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1otexpc TO cor_exp_perc_other_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2corexp TO cor_exp_total_dollars_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2instpc TO cor_exp_perc_instruction_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2rsrcpc TO cor_exp_perc_research_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2pbsvpc TO cor_exp_perc_public_srv_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2acsppc TO cor_exp_perc_acad_support_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2stsvpc TO cor_exp_perc_student_serv_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2insupc TO cor_exp_perc_inst_serv_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2otexpc TO cor_exp_perc_other_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1instft TO fte_exp_instruction_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1rsrcft TO fte_exp_research_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1pbsvft TO fte_exp_public_srv_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1acspft TO fte_exp_acad_support_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1stsvft TO fte_exp_student_serv_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1insuft TO fte_exp_inst_serv_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1otexft TO fte_exp_other_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2instft TO fte_exp_instruction_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2rsrcft TO fte_exp_research_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2pbsvft TO fte_exp_public_srv_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2acspft TO fte_exp_acad_support_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2stsvft TO fte_exp_student_serv_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2insuft TO fte_exp_inst_serv_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2otexft TO fte_exp_other_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2endmft TO fte_endowment_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f1equitr TO equity_ratio_gasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN f2equitr TO equity_ratio_fasb;
+ALTER TABLE higher_ed_dataset RENAME COLUMN efug TO ug_enrollment;
+ALTER TABLE higher_ed_dataset RENAME COLUMN efgrad TO grad_enrollment;
+ALTER TABLE higher_ed_dataset RENAME COLUMN rminsttn TO num_first_time_ug_in_state;
+ALTER TABLE higher_ed_dataset RENAME COLUMN rmousttn TO num_first_time_ug_out_state;
+ALTER TABLE higher_ed_dataset RENAME COLUMN rmousttp TO perc_first_time_ug_out_state;
+ALTER TABLE higher_ed_dataset RENAME COLUMN rminsttp TO perc_first_time_ug_in_state;
