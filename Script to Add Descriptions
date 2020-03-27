@@ -1,0 +1,15 @@
+DROP TABLE IF EXISTS higher_ed_dataset_1;
+CREATE TABLE higher_ed_dataset_1 AS
+SELECT*
+	,CASE WHEN sector='1' THEN 'Public  4-year or above'
+		WHEN sector='2' THEN 'Private not-for-profit 4 year or above'
+		ELSE NULL END AS sector_desc
+	,CASE WHEN instsize='1' THEN 'Under 1000'
+		WHEN instsize='2' THEN '1000 to 4999'
+		WHEN instsize='3' THEN '5000 to 9999'
+		WHEN instsize='4' THEN '10000 to 19999'
+		WHEN instsize='5' THEN '200000 or above'
+		WHEN instsize='-1' THEN 'Not reported'
+		WHEN instsize='-2' THEN 'Not applicable'
+		ELSE NULL END AS instsize_descr
+FROM higher_ed_dataset;
