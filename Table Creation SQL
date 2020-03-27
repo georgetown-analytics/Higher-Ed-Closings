@@ -94,7 +94,13 @@ CREATE TABLE ay_08_09
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)); 
 
 COPY ay_08_09 (	
 	UnitID
@@ -191,6 +197,12 @@ COPY ay_08_09 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 08 09.csv' DELIMITER ',' CSV HEADER; 
 
@@ -290,7 +302,13 @@ CREATE TABLE ay_09_10
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)); 
 
 COPY ay_09_10 (	
 	UnitID
@@ -387,6 +405,12 @@ COPY ay_09_10 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 09 10.csv' DELIMITER ',' CSV HEADER; 
 
@@ -486,7 +510,14 @@ CREATE TABLE ay_10_11
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	
+); 
 
 COPY ay_10_11 (	
 	UnitID
@@ -583,6 +614,12 @@ COPY ay_10_11 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 10 11.csv' DELIMITER ',' CSV HEADER; 
 
@@ -682,7 +719,13 @@ CREATE TABLE ay_11_12
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	); 
 
 COPY ay_11_12 (	
 	UnitID
@@ -779,6 +822,12 @@ COPY ay_11_12 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 11 12.csv' DELIMITER ',' CSV HEADER;       
 
@@ -878,7 +927,13 @@ CREATE TABLE ay_12_13
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	); 
 
 COPY ay_12_13 (	
 	UnitID
@@ -975,6 +1030,12 @@ COPY ay_12_13 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 12 13.csv' DELIMITER ',' CSV HEADER;     
 
@@ -1074,7 +1135,13 @@ CREATE TABLE ay_13_14
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	); 
 
 COPY ay_13_14 (	
 	UnitID
@@ -1171,6 +1238,12 @@ COPY ay_13_14 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 13 14.csv' DELIMITER ',' CSV HEADER;             
 
@@ -1270,7 +1343,13 @@ CREATE TABLE ay_14_15
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	); 
 
 COPY ay_14_15 (	
 	UnitID
@@ -1367,6 +1446,12 @@ COPY ay_14_15 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 14 15.csv' DELIMITER ',' CSV HEADER;  
 
@@ -1466,7 +1551,13 @@ CREATE TABLE ay_15_16
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	); 
 
 COPY ay_15_16 (	
 	UnitID
@@ -1563,6 +1654,12 @@ COPY ay_15_16 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 15 16.csv' DELIMITER ',' CSV HEADER;  
 
@@ -1662,7 +1759,13 @@ CREATE TABLE ay_16_17
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	); 
 
 COPY ay_16_17 (	
 	UnitID
@@ -1759,6 +1862,12 @@ COPY ay_16_17 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
 FROM 'C:\Users\Public\Raw Data\IPEDS AY 16 17.csv' DELIMITER ',' CSV HEADER;   
 
@@ -1858,7 +1967,13 @@ CREATE TABLE ay_17_18
 	,F2OTEXFT 	 varchar(50)	
 	,F2ENDMFT 	 varchar(50)	
 	,F1EQUITR 	 varchar(50)	
-	,F2EQUITR  varchar(50)	); 
+	,F2EQUITR  varchar(50)	
+	,EFUG 	varchar(50)	
+	,EFGRAD 	varchar(50)	
+	,RMINSTTN 	varchar(50)	
+	,RMOUSTTN 	varchar(50)	
+	,RMOUSTTP 	varchar(50)	
+	,RMINSTTP varchar(50)	); 
 
 COPY ay_17_18 (	
 	UnitID
@@ -1955,5 +2070,11 @@ COPY ay_17_18 (
 	,F2ENDMFT 	
 	,F1EQUITR 	
 	,F2EQUITR 
+	,EFUG 
+	,EFGRAD 	
+	,RMINSTTN 
+	,RMOUSTTN 	
+	,RMOUSTTP 	
+	,RMINSTTP 
 )
-FROM 'C:\Users\Public\Raw Data\IPEDS AY 17 18.csv' DELIMITER ',' CSV HEADER;                     
+FROM 'C:\Users\Public\Raw Data\IPEDS AY 17 18.csv' DELIMITER ',' CSV HEADER;                                        
