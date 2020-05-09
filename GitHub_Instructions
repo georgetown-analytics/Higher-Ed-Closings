@@ -1,0 +1,30 @@
+
+Instructions to Commit to Github Higher Ed Closings
+
+- clone repository
+
+git clone https://github.com/georgetown-analytics/Higher-Ed-Closings.git
+
+- change to master branch
+
+git checkout master
+
+- Open the "Upstream" to our repository 
+
+git remote add https://github.com/georgetown-analytics/Higher-Ed-Closings.git
+
+- Confirm you are on the master branch
+
+git status
+
+- puts the file on the waiting list (you can also remove files with git rm)
+
+git add "file path"
+
+- adds a comment so people can know why/what the file is
+
+git commit -m "Comment to explain the upload"
+
+- finally push "upload files to master" make sure the files are in the folder you want them to upload them to in git, you will be asked for your username and password
+
+git push https://github.com/georgetown-analytics/Higher-Ed-Closings.git master
